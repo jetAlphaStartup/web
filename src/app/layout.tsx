@@ -1,27 +1,28 @@
-import Providers from "@/components/providers";
+import { Recursive } from "next/font/google";
 import "./globals.css";
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import Navbar from "@/components/layout/nav-bar";
+import Providers from "@/components/providers";
+import { constructMetadata } from "@/lib/utils";
 
-const roboto = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "300", "500", "700", "900"],
-});
+const recursive = Recursive({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Jethings",
-  description: "something we are trying to build it ",
-};
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}): JSX.Element {
+}>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <Providers>{children}</Providers>
+      <body className={recursive.className}>
+        <Navbar />
+
+        <main className="flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]">
+          <div className="flex-1 flex flex-col h-full">
+            <Providers>{children}</Providers>
+          </div>
+        </main>
       </body>
     </html>
   );
