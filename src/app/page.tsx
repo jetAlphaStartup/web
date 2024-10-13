@@ -1,13 +1,12 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Phone from "@/components/phone";
-
-import { Check, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
   return (
     <div className="bg-slate-50 grainy-light">
       <section>
-        <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8  xl:pt-32 lg:pb-52">
+        <MaxWidthWrapper className="  lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 py-10 ">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
@@ -16,55 +15,31 @@ export default function Page() {
                 <img src="/snake-1.png" className="w-full" />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
-                Rayan is building{" "}
-                <span className="bg-[#066b3a] px-2 text-white">Jethings</span>{" "}
-                And ow{" "}
+                Empowering{" "}
+                <span className="bg-[#066b3a] px-2 text-white">
+                  {" "}
+                  E-commerce
+                </span>{" "}
+                in Algeria
               </h1>
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
-                Capture your favorite memories with your own,{" "}
-                <span className="font-semibold">one-of-one</span> phone case.
-                CaseCobra allows you to protect your memories, not just your
-                phone case.
+                we are revolutionizing the e-commerce landscape in Algeria by
+                offering comprehensive solutions that simplify transactions
+                between stores, delivery companies, and customers.
               </p>
 
-              <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
-                <div className="space-y-2">
-                  <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-[#066b3a]" />
-                    High-quality, durable material
-                  </li>
-                  <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-[#066b3a]" />5 year
-                    print guarantee
-                  </li>
-                  <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-[#066b3a]" />
-                    Modern iPhone models supported
-                  </li>
-                </div>
-              </ul>
-
-              <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
-                <div className="flex flex-col justify-between items-center sm:items-start">
-                  <div className="flex gap-0.5">
-                    <Star className="h-4 w-4 text-[#066b3a] fill-[#066b3a]" />
-                    <Star className="h-4 w-4 text-[#066b3a] fill-[#066b3a]" />
-                    <Star className="h-4 w-4 text-[#066b3a] fill-[#066b3a]" />
-                    <Star className="h-4 w-4 text-[#066b3a] fill-[#066b3a]" />
-                    <Star className="h-4 w-4 text-[#066b3a] fill-[#066b3a]" />
-                  </div>
-
-                  <p>
-                    <span className="font-semibold">1.250</span> happy customers
-                  </p>
-                </div>
-              </div>
+              <Button
+                className="bg-[#066b3a] max-w-96 w-full font-bold h-[50px] my-8 hover:bg-[#0b2619] rounded-2xl"
+                size={"lg"}
+              >
+                Join the wait list
+              </Button>
             </div>
           </div>
 
           <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
             <div className="relative md:max-w-xl">
-              <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
+              <Phone className="w-[50rem]" imgSrc="/testimonials/1.jpg" />
             </div>
           </div>
         </MaxWidthWrapper>
