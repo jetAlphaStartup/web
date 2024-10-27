@@ -39,7 +39,7 @@ export default function Page() {
 
           <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
             <div className="relative md:max-w-xl">
-              <Phone className="w-[50rem]" imgSrc="/testimonials/1.jpg" />
+              <Phone />
             </div>
           </div>
         </MaxWidthWrapper>
