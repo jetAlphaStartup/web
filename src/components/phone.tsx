@@ -1,27 +1,11 @@
-import { cn } from "@/lib/utils";
-import { HTMLAttributes } from "react";
+import Iphone15Pro from "@/components/ui/iphone-15-pro";
 
-interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
-  imgSrc: string;
-  dark?: boolean;
-}
-
-const Phone = ({ className, ...props }: PhoneProps) => {
+export function Phone() {
   return (
-    <div
-      className={cn(
-        "relative pointer-events-none z-50 overflow-hidden",
-        className
-      )}
-      {...props}
-    >
-      <img
-        src={"/phone.png"}
-        className="pointer-events-none z-50 select-none "
-        alt="phone image"
-      />
+    <div className="relative">
+      <Iphone15Pro className="size-full dark" src="/reels.jpg" />
     </div>
   );
-};
+}
 
 export default Phone;
