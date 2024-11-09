@@ -28,15 +28,8 @@ export default function Page() {
                 between stores, delivery companies, and customers.
               </p>
 
-              {/* <Button
-                className="bg-[#181818]  max-w-40 flex items-center justify-center gap-x-2 font-bold h-[50px] my-8 hover:bg-black rounded-2xl"
-                size={"lg"}
-              >
-                <FileBox className="w-5 h-5 text-white flex-shrink-0" />
-                Download Now
-              </Button> */}
               <AppDownloadButton
-                apkUrl="https://utfs.io/f/2b238465-ce10-43be-927d-57ebdd4b5d61-1o3.pdf"
+                apkUrl="https://utfs.io/f/A2HLI5SDeaS1KbzdgKfDHdf8yG6gWJZ1LvORSM5lz4YNoiEx"
                 appName="jethings store"
                 version="1.0.0"
               />
