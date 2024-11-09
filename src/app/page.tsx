@@ -1,6 +1,6 @@
+import { AppDownloadButton } from "@/components/download-button";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Phone from "@/components/phone";
-import { Button } from "@/components/ui/button";
 
 export default function Page() {
   return (
@@ -28,12 +28,18 @@ export default function Page() {
                 between stores, delivery companies, and customers.
               </p>
 
-              <Button
-                className="bg-[#066b3a] max-w-96 w-full font-bold h-[50px] my-8 hover:bg-[#0b2619] rounded-2xl"
+              {/* <Button
+                className="bg-[#181818]  max-w-40 flex items-center justify-center gap-x-2 font-bold h-[50px] my-8 hover:bg-black rounded-2xl"
                 size={"lg"}
               >
-                Join the wait list
-              </Button>
+                <FileBox className="w-5 h-5 text-white flex-shrink-0" />
+                Download Now
+              </Button> */}
+              <AppDownloadButton
+                apkUrl="https://utfs.io/f/2b238465-ce10-43be-927d-57ebdd4b5d61-1o3.pdf"
+                appName="jethings store"
+                version="1.0.0"
+              />
             </div>
           </div>
 
